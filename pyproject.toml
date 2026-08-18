@@ -1,0 +1,17 @@
+[project]
+name = "gamegrab"
+version = "0.1.0"
+description = "Interactive resumable downloader for legally-obtained game files"
+authors = [{name="Your Name"}]
+requires-python = ">=3.10"
+
+[project.dependencies]
+aiohttp = "^3.9"
+aiofiles = "^23.1"
+rich = "^13.0"
+typer = "^0.9"
+prompt-toolkit = "^3.0"
+tomli = "^2.0"
+
+[project.scripts]
+gamegrab = "gamegrab.__main__:app"
